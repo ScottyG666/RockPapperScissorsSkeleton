@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+}
+
+.intro-text-container {
+    margin :100px auto;
+}
+
+.choices-container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 40px;
+}
+
+
+.choice-image {
+    height: 250px;
+    width: 350px;
+    border-radius: 15px;
+}

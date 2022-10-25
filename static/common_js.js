@@ -1,4 +1,25 @@
-game();
+const rockImage = document.querySelector('.rock');
+rockImage.addEventListener('click' , () => {
+    playRound('rock' , getComputerChoice());
+});
+
+const paperImage = document.querySelector('.paper');
+paperImage.addEventListener('click' , () => {
+    playRound('paper' , getComputerChoice());
+});
+
+const scissorsImage = document.querySelector('.scissors');
+scissorsImage.addEventListener('click' , () => {
+    playRound('scissors' , getComputerChoice());
+});
+
+
+
+
+
+
+
+//      FUNCTIONS CREATED WHEN MAKING GAME WITHOUT UI
 
 
 function game() {
