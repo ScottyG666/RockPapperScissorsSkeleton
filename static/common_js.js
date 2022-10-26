@@ -22,35 +22,6 @@ scissorsImage.addEventListener('click' , () => {
 //      FUNCTIONS CREATED WHEN MAKING GAME WITHOUT UI
 
 
-function game() {
-
-    let playerWins = 0; 
-    let playerLoses = 0;
-    let playerTies = 0;
-
-    for (let i = 0 ; i < 5 ; i++) {
-        let playerChoice =  getValidPlayerChoice();
-
-        let computerChoice = getComputerChoice();
-
-        let result = playRound(playerChoice, computerChoice);
-
-        if (result === 0) {
-            playerTies++;
-        } else if ( result === 1) {
-            playerWins++;
-        } else if ( result == 2) {
-            playerLoses++;
-        } else {
-            console.log("Unexpected Result!");
-        }
-
-        console.log(result);
-    }
-    console.log( `Player won ${playerWins} times`);
-    console.log( `Player lost ${playerLoses} times`);
-    console.log( `Player tied ${playerTies} times`);
-}
 
 function playRound (playerChoice, computerChoice) {
 
@@ -104,3 +75,40 @@ function getComputerChoice() {
         return "Number was not between 1-100"
     }
 }
+
+
+
+
+/**         FUNCTION FOR PLAYING 5 GAMES ALL AT ONCE
+ * 
+ * function game() {
+
+    let playerWins = 0; 
+    let playerLoses = 0;
+    let playerTies = 0;
+
+    for (let i = 0 ; i < 5 ; i++) {
+        let playerChoice =  getValidPlayerChoice();
+
+        let computerChoice = getComputerChoice();
+
+        let result = playRound(playerChoice, computerChoice);
+
+        if (result === 0) {
+            playerTies++;
+        } else if ( result === 1) {
+            playerWins++;
+        } else if ( result == 2) {
+            playerLoses++;
+        } else {
+            console.log("Unexpected Result!");
+        }
+
+        console.log(result);
+    }
+    console.log( `Player won ${playerWins} times`);
+    console.log( `Player lost ${playerLoses} times`);
+    console.log( `Player tied ${playerTies} times`);
+}
+ * 
+ */
