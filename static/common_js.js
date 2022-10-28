@@ -29,9 +29,6 @@ function playScissors () {
     updateRunningScoreDiv();
 }
 
-
-
-
 function updateRunningScoreDiv () {
 
     if (playerWins === 0 && computerWins === 0 && playerTiesComputer === 0) {
