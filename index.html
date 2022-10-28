@@ -4,9 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basic RPS Game</title>
+
+    <link rel="stylesheet" href="static/style.css">
 </head>
-<body style="background-color: black;">
+<body style="background-color: black; color: white;">
+
+    <div class="game-container">
+        <div class="intro-text-container">
+            <h2>This is a game of Rock Paper Scissors.</h2>
+            <h4>Can you best the machine?</h4>
+        </div>
+        
+        <div class="choices-container">
+            <div class="choice rock">
+                <h1>Rock</h1>
+                <img class="choice-image" src="static/images/rock.jpg" alt="Picture of a Rock">
+            </div>
+            <div class="choice paper">
+                <h1>Paper</h1>
+                <img class="choice-image" src="static/images/paper.jpg" alt="Picture of a Paper">
+            </div>
+            <div class="choice scissors">
+                <h1>Scissors</h1>
+                <img class="choice-image" src="static/images/scissors.jpg" alt="Picture of a scissors">
+            </div>
+        </div>
+
+        <div class="running-score-display">
+            <div class="win-lose-container">
+                <span class="win-counter score-informational"></span>
+                <span class="lose-counter score-informational"></span>
+            </div>
+            <div class="tie-counter-container">
+                <span class="tie-counter score-informational"></span>
+            </div>
+        </div>
+
+    </div>
+
     <script src="static/common_js.js"></script>
 </body>
 </html>
