@@ -23,3 +23,8 @@ body {
     width: 350px;
     border-radius: 15px;
 }
+
+.score-informational {
+    font-size: 25px;
+    padding: 0 25px;
+}
