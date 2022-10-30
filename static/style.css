@@ -19,12 +19,19 @@ body {
 
 
 .choice-image {
-    height: 250px;
-    width: 350px;
+    height: 300px;
+    width: 400px;
     border-radius: 15px;
 }
 
 .score-informational {
     font-size: 25px;
     padding: 0 25px;
+}
+@media only screen and (max-width: 1000px) {
+    .choice-image {
+        height: 140px;
+        width: 185px;
+        border-radius: 15px;
+    }
 }
