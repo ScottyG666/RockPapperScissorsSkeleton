@@ -1,13 +1,25 @@
 html, body {
     height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     text-align: center;
+    color: white;
+    background-color: black; 
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 25px
 }
 
 .intro-text-container {
-    margin :100px auto;
+    padding:50px 0 15px 0;
 }
 
 .choices-container {
@@ -19,8 +31,8 @@ body {
 
 
 .choice-image {
-    height: 300px;
-    width: 400px;
+    height: 270px;
+    width: 360px;
     border-radius: 15px;
 }
 
@@ -28,6 +40,17 @@ body {
     font-size: 25px;
     padding: 0 25px;
 }
+
+.footer {
+    font-size: 35px;
+    height: 75px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
 @media only screen and (max-width: 1000px) {
     .choice-image {
         height: 140px;
